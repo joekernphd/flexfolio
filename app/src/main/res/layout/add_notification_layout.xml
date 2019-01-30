@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_notifications_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="ADD NOTIFICATIONS"
+        android:textAlignment="center"
+        android:textColor="@color/superWhite"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/notification_coin_title_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_below="@id/add_notifications_title"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Coin"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/notification_edit_coin"
+        style="@android:style/Widget.ListView.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/notification_coin_title_"
+        android:backgroundTint="@color/superWhite"
+        android:ems="10"
+        android:padding="15dp"
+        android:hint="Enter Coin Symbol"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/superWhite"
+        android:textColorHint="@color/lightgrey"
+        android:textColorLink="@color/superWhite"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textCursorDrawable="@color/twitterBlue"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/coin_price_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_edit_coin"
+        android:layout_marginTop="31dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Current Price"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/coin_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin_price_title"
+        android:layout_marginTop="31dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="CurPrice"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/threshold_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin_price"
+        android:layout_marginTop="31dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Price Threshold"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/threshold_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/threshold_title"
+        android:gravity="left"
+        android:hint="Enter Price Threshold"
+        android:textColorHint="@color/lightgrey"
+        android:paddingLeft="10dp"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/above_or_below_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/threshold_price"
+        android:layout_marginTop="31dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Above Or Below"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp"
+        />
+
+
+    <Button
+        android:id="@+id/submitNotificationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:text="Submit" />
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/above_or_below_title"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonBelow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/superWhite"
+            android:buttonTint="@color/twitterBlue"
+            android:text="Below" />
+
+        <RadioButton
+            android:id="@+id/radioButtonAbove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/superWhite"
+            android:buttonTint="@color/twitterBlue"
+            android:text="Above" />
+
+    </RadioGroup>
+
+
+</android.widget.RelativeLayout>

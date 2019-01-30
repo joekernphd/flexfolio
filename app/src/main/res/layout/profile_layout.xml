@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/profile_fragment"
+    android:background="@drawable/gradient_background2">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/scroll">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/balance_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="60dp"
+                    android:text="Total Balance" />
+
+                <TextView
+                    android:id="@+id/balance_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/balance_header"
+                    android:layout_centerHorizontal="true"
+                    android:text="4,200,000.00"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/currencySymbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/balance_number"
+                    android:layout_alignTop="@+id/balance_number"
+                    android:layout_toStartOf="@+id/balance_number"
+                    android:text="$"
+                    android:textColor="@color/superWhite"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/change_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/balance_number"
+                    android:text="420.00"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@+id/change_symbol"
+                    />
+
+                <TextView
+                    android:id="@+id/change_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/change_number"
+                    android:layout_alignTop="@+id/change_number"
+                    android:layout_toEndOf="@+id/change_number"
+                    android:text="(1%)"
+                    android:textColor="@color/green"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/change_symbol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/change_number"
+                    android:layout_alignTop="@+id/change_number"
+                    android:layout_marginStart="120dp"
+                    android:text="$"
+                    android:textColor="@color/green"
+                    android:textSize="20sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/balance">
+
+                <FrameLayout
+                    android:id="@+id/pie_chart_frame"
+                    android:layout_width="480dp"
+                    android:layout_height="480dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="-35dp"/>
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    tools:context=".ListActivity"
+                    android:id="@+id/investmentListFragment"
+                    android:name="com.example.cryptodaddies.flexfolio.list.CoinListInvestmentFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-20dp"
+                    android:layout_below="@+id/pie_chart_frame"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

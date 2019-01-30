@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_friends_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="FOLLOW USERS"
+        android:textAlignment="center"
+        android:textColor="@color/superWhite"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/email_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add_friends_title"
+        android:layout_marginTop="43dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="User Email"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/email_title"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:textColor="@color/superWhite"
+        android:textColorHint="@color/lightgrey"
+        android:textColorLink="@color/superWhite"
+        android:textCursorDrawable="@color/twitterBlue"
+        android:backgroundTint="@color/superWhite"
+        />
+
+    <Button
+        android:id="@+id/followButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="Submit" />
+
+</android.widget.RelativeLayout>

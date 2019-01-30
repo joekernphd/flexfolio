@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/add_investments_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:text="ADD INVESTMENTS"
+        android:textAlignment="center"
+        android:textColor="@color/superWhite"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/coin_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_below="@id/add_investments_title"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Coin"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/edit_coin"
+        style="@android:style/Widget.ListView.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/coin_title"
+        android:backgroundTint="@color/superWhite"
+        android:ems="10"
+        android:padding="15dp"
+        android:hint="Enter New Coin"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="@color/superWhite"
+        android:textColorHint="@color/lightgrey"
+        android:textColorLink="@color/superWhite"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textCursorDrawable="@color/twitterBlue"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/coin_current_price_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_coin"
+        android:layout_marginTop="31dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Current Price"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/coin_current_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin_current_price_title"
+        android:layout_marginTop="31dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="CurPrice"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/coin_bought_price_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin_current_price"
+        android:layout_marginTop="31dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Bought Price"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/edit_coin_bought_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/coin_bought_price_title"
+        android:gravity="left"
+        android:hint="Enter Price Bought"
+        android:textColorHint="@color/lightgrey"
+        android:paddingLeft="10dp"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:id="@+id/coin_bought_amount_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_coin_bought_price"
+        android:layout_marginTop="31dp"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:text="Bought Amount"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_coin_bought_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin_bought_amount_title"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        android:hint="Enter 0 to Watch"
+        android:textColorHint="@color/lightgrey"
+        android:textColor="@color/superWhite"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:inputType="numberDecimal"/>
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edit_coin_bought_amount"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="33dp"
+        android:text="Submit" />
+
+    <Button
+        android:id="@+id/flexButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/submitButton"
+        android:layout_alignBottom="@+id/submitButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="44dp"
+        android:text="Flex" />
+
+</android.widget.RelativeLayout>

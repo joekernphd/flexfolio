@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/feedrow_initials"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:paddingTop="25dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/twitterBlue"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/feedrow_displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_toRightOf="@id/feedrow_initials"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:textColor="@color/superWhite"/>
+
+    <TextView
+        android:id="@+id/feedrow_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/feedrow_initials"
+        android:layout_below="@id/feedrow_displayName"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:textColor="@color/superWhite"/>
+
+    <TextView
+        android:id="@+id/feedrow_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/feedrow_status"
+        android:text="TextView"
+        android:paddingTop="15dp"
+        android:paddingLeft="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textAlignment="textEnd"
+        android:paddingRight="20dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:textColor="@color/superWhite"/>
+</RelativeLayout>

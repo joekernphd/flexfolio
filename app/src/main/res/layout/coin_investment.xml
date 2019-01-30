@@ -1,0 +1,9 @@
+<com.example.cryptodaddies.flexfolio.list.CoinInvestmentView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp">
+</com.example.cryptodaddies.flexfolio.list.CoinInvestmentView>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/gradient_background2">
+
+    <TextView
+        android:id="@+id/current_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="10dp"
+        android:text="Current price" />
+
+    <TextView
+        android:id="@+id/balance_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/current_price"
+        android:layout_marginLeft="10dp"
+        android:text="$9426.39"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <fragment
+        android:id="@+id/fragmentCandleChart"
+        android:name="com.example.cryptodaddies.flexfolio.graphing.CandleChartFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/spacer1"
+        android:layout_above="@id/spacer2"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/buttonA"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="164dp"-->
+        <!--android:visibility="invisible" />-->
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/current_price"
+        android:enabled="true"
+        android:visibility="invisible"
+        android:text="ToggleButton" />
+
+    <Space
+        android:id="@+id/spacer1"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toggleButton" />
+
+    <Space
+        android:id="@+id/spacer2"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="164dp" />
+
+
+    <TextView
+        android:id="@+id/alertText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggleButton"
+        android:layout_alignBottom="@+id/toggleButton"
+        android:layout_toStartOf="@+id/toggleButton"
+        android:layout_marginEnd="10dp"
+        android:text="Alerts"
+        android:visibility="invisible"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/data24hr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spacer2"
+        android:layout_alignStart="@+id/High"
+        android:text="24 hr market data"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/High"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/balance_number"
+        android:layout_below="@+id/data24hr"
+        android:layout_marginTop="13dp"
+        android:text="High" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/Low"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/balance_number"-->
+        <!--android:layout_below="@+id/highValue"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:text="Low" />-->
+
+    <TextView
+        android:id="@+id/MarketCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/balance_number"
+        android:layout_below="@+id/highValue"
+        android:layout_marginTop="13dp"
+        android:text="Market Cap" />
+
+    <TextView
+        android:id="@+id/totalSupply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/marketCapValue"
+        android:layout_alignStart="@+id/lowValue"
+        android:text="Total Supply" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/Bid"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/High"-->
+        <!--android:layout_toEndOf="@+id/High"-->
+        <!--android:layout_marginStart="100dp"-->
+        <!--android:text="Bid" />-->
+
+    <TextView
+        android:id="@+id/Low"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/High"
+        android:layout_toEndOf="@+id/High"
+        android:layout_marginStart="100dp"
+        android:text="Low" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/Ask"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/lowValue"-->
+        <!--android:layout_alignStart="@+id/bidValue"-->
+        <!--android:text="Ask" />-->
+
+
+    <TextView
+        android:id="@+id/Volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Low"
+        android:layout_toEndOf="@id/Low"
+        android:layout_marginStart="100dp"
+        android:text="Volume" />
+
+    <TextView
+        android:id="@+id/Change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/supplyValue"
+        android:layout_alignStart="@+id/volumeValue"
+        android:text="Change" />
+
+    <TextView
+        android:id="@+id/volumeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/Low"
+        android:layout_marginStart="100dp"
+        android:layout_below="@id/Volume"
+        android:text="$7.40MM"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/changeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/Change"
+        android:layout_below="@+id/Change"
+        android:text="+30.32%"
+        android:textColor="@android:color/white" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/bidValue"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toEndOf="@+id/High"-->
+        <!--android:layout_marginStart="100dp"-->
+        <!--android:layout_below="@id/Bid"-->
+        <!--android:text="$124.19"-->
+        <!--android:textColor="@android:color/white"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/askValue"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignStart="@+id/Ask"-->
+        <!--android:layout_below="@+id/Ask"-->
+        <!--android:text="$124.19"-->
+        <!--android:textColor="@android:color/white" />-->
+
+    <TextView
+        android:id="@+id/supplyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/totalSupply"
+        android:layout_below="@+id/totalSupply"
+        android:text="$124.19"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/highValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/balance_number"
+        android:layout_below="@id/High"
+        android:text="$127.53"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/lowValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/High"
+        android:layout_marginStart="100dp"
+        android:layout_below="@id/Low"
+        android:text="$124.19"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/marketCapValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/MarketCap"
+        android:layout_below="@+id/MarketCap"
+        android:text="$127.53"
+        android:textColor="@android:color/white" />
+
+
+
+</RelativeLayout>

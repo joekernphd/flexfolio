@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "388668822935",
+    "firebase_url": "https://flexfolio-e99d9.firebaseio.com",
+    "project_id": "flexfolio-e99d9",
+    "storage_bucket": "flexfolio-e99d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388668822935:android:9bc25d69fe114454",
+        "android_client_info": {
+          "package_name": "com.example.cryptodaddies.flexfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388668822935-ot87vpofqitmcfcif01udk4mjnamaa21.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "388668822935-pukhih3bu3p6721nja263jp1lefeijce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": ""
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_bg"
+        android:padding="11dp">
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="12dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="name" />
+        <TextView
+            android:id="@+id/item_symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="8dp"
+            android:text="symbol/ticker" />
+        <TextView
+            android:id="@+id/item_pricePercentChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="12dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:text="percent change" />
+        <TextView
+            android:id="@+id/item_currentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/item_pricePercentChange"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="12dp"
+            android:text="current price" />
+
+    </RelativeLayout>
+
+</merge>
